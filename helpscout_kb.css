@@ -1,0 +1,17 @@
+
+/* Auto-generated Table of Contents styling */
+
+#table-of-contents a {
+ display: block;
+ margin-bottom: 5px;
+}
+#table-of-contents a:before {
+	content: '•';
+	padding-right: 5px;
+} 
+.indent {
+  padding-left: 20px;
+}
+.double-indent {
+  padding-left: 40px;
+}
