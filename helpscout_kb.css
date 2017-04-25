@@ -22,7 +22,7 @@
 
 
 /* Back To Top button  */
-#top-btn {
+#fullArticle div#top-btn {
   position: fixed;
   bottom: 15px;
   left: 25%;
@@ -34,7 +34,7 @@
 }
 
 @media (max-width: 768px) {
-  #top-btn {
+  #fullArticle div#top-btn {
     left: 20px;
   }
  } 
