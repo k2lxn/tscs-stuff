@@ -1,21 +1,8 @@
 /* Custom js functions for Help Scout Docs */
 
-/* document ready wrappers commented out because Help Scout adds the event listeners
- * Per Help Scout documentation (http://docs.helpscout.net/article/436-custom-javascript),
- * add scripts to the <head> in this format:
- * 
- * <script type="text/javascript">
- * 	(function() {   
- * 		function customScript() {   
- *		// CUSTOM FUNCTIONS HERE  
- *   }
- *   if (window.addEventListener) {
- *   	window.addEventListener("load",customScript,false);
- * 	 } else if (window.attachEvent) {
- *   	window.attachEvent("onload",customScript);
- *   }
- * 	})()
- * </script>
+/* document.ready wrappers left here for development/testing only
+ * For production code, use custom_functions_PRODUCTION.js
+ * See Help Scout documentation: docs.helpscout.net/article/436-custom-javascript
  */
 
 /* ------------------------- CUSTOM FUNCTIONS ----------------------------- */
@@ -28,7 +15,7 @@
  * 2) insert an anchor link with the same inner HTML into the ToC div
  *
  */
-//$(document).ready(function() {
+$(document).ready(function() {
   var headers = $('#table-of-contents').nextAll('h1, h2, h3');
   $.each(headers, function(i, curr) {
     // Make sure the heading isn't an empty formatting element
@@ -69,7 +56,7 @@
       }
     }
   });
-//}); 
+}); 
 
 
 
@@ -78,7 +65,7 @@
  * scrolls the user back to navigation (or top of page if navigation doesn't exist)  
  */
  
-//$(document).ready(function() { 
+$(document).ready(function() { 
 	// If no 'Back' button exists, append it to #main-content (Help Scout specific id) 
 	if ( !$('#top-btn').length ){
     	$('#main-content').append("<a id='top-btn' style='display:none;'>Back ▴</a>");
@@ -100,11 +87,11 @@
   	$(document).on('click', 'a#top-btn', function(){
  		$('a#top-btn').hide();
  	});
-//}); 
+}); 
  
 
 
-/* SMOOTH to Anchor Links */
+/* SMOOTH SCROLLING to Anchor Links */
 $(document).on('click', 'a[href^="#"]', function(){
 	var target = $(this.hash);
 	if ( target.length ) {
