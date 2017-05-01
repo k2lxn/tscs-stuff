@@ -105,7 +105,7 @@
     		var currScroll = $(this).offset().top;
     		var scrollTo = target.offset().top;
     		var distance = Math.abs(scrollTo - currScroll); 
-    		var scrollTime = distance > 0 ? distance * 1.2 : 800; 
+    		var scrollTime = distance > 0 ? distance * 0.5 : 800; 
 			$('html, body').animate({
 				scrollTop: scrollTo
 			}, scrollTime);
