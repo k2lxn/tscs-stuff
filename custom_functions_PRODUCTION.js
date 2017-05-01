@@ -22,7 +22,7 @@
  */
  
  
- <script type="text/javascript">
+
   (function() {
     function customScript() {
     /* TABLE OF CONTENTS
@@ -120,7 +120,7 @@
       window.attachEvent("onload",customScript);
     }
   })()
-</script>
+
 
 
 
