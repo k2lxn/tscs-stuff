@@ -17,8 +17,9 @@
  * 	})()
  * </script>
  *
- * INSTRUCTIONS: Copy and paste the code below underneath the Google Analytics script
- * in the Help Scout <head> (must have admin privileges)
+ * INSTRUCTIONS: Copy and paste a reference to the RawGit copy of this script 
+ * below the Google Analytics script in the Help Scout <head> (must be admin):
+ * <script type="text/javascript" src="https://rawgit.com/k2lxn/tscs-stuff/master/custom_functions_PRODUCTION.js"></script>
  */
  
  
