@@ -10,7 +10,7 @@
  margin-bottom: 5px;
 }
 #table-of-contents a:before {
-	content: '•';
+	content: '\2022';
 	padding-right: 5px;
 } 
 .indent {
